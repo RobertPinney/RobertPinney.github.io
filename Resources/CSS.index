@@ -1,1 +1,90 @@
+body {
+    background-color: ghostwhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
 
+.monospace {
+    font-family: "Lucida Console", Courier, monospace;
+    font-weight: 900;
+    font-size: 48px;
+  }
+
+span {
+    background-color: seashell;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    line-height: 200%;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    background-image: url(https://paulgordonbrown.files.wordpress.com/2014/12/paul-brown-headshots-72.jpg?w=1400);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 500px 300px 300px 300px;
+}
+
+h2{
+    color: slategray;
+    margin-top: 75px;
+}
+
+p {
+    line-height: 150%;
+}
+
+
+.intro {
+    text-align: center;
+    font-size: large;
+}
+
+.intro h2{
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: 25px;
+}
+
+.table {
+    text-align: center;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, td {
+    border: 1px solid #333;
+    padding: 5px;
+}
+
+thead, tfoot {
+    background-color: lightsteelblue;
+    color: midnightblue;
+    font-size: 24px;
+}
+
+caption {
+    display: table-caption;
+    caption-side: bottom;
+    text-align: center;
+  }
+
+.thankYou {
+    margin-top: 100px;
+}
+
+.contact li{
+    display: inline-block;
+    margin-right: 50px;
+}
