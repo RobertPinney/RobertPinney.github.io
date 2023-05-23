@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Linking</title>
+    <link rel="stylesheet" href="./Resources/CSS/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="monospace">How to create links in html</h1>
+    </header>
+    <main>
 
+                <!--Introduction to anchor element and hyperlinks-->
+        <div class="intro">
+            <h2>Introduction</h2>
+            <p>Before reviewing how to link information within an html file, it is important to note that there are different categories of links. 
+                <strong>External</strong> and <strong>internal</strong>.</p>
+            <p>External links attach information to the html file from an external source, such as from another webpage.</p>
+            <p>Internal links attach files from within a local file directory, or to another part of the same html document.</p>
+            <p>However, whether or not we are using an internal or an external link, the link is always wrapped within an <em>anchor element</em> &lt;a&gt. 
+                This is then followed by a <em>hyperlink reference</em> 'href', an equals sign '=', a link wrapped in quotations, and the displayed name of the link:</p>
+            <br>
+                    <!--code for displaying a blank anchor element in html format-->        
+            <span>&lt;a href=""&gtname&lt;/a&gt</span>
+            <br>
+        </div>
+
+                <!--External linking-->
+        <div>
+            <h2>External linking</h2>
+                <p>Here is an example of an anchor element linking to another webpage. This is reffered to as an <em>absolute path</em>.</p>
+                <br>
+                <span>&lt;a href="https://www.w3schools.com/html/html_filepaths.asp"&gtW3schools - HTML File Paths&lt;/a&gt</span>
+                <br>
+                <p>Additionally there is a target attribute included that tells a link how to open. In this case "_blank" tells the browser to open in 
+                    a new window, or in the case of a modern browser, in a new tab.
+                </p>
+        </div>
+
+                <!--Internal linking-->
+        <div>
+                <h2>Internal linking</h2>
+                 <p>Projects are often created in one main folder with different sections or subfolders within. The browser is aware of these sibling folders and can
+                        access their information via the use of <em>relative paths</em>. For example:</p> 
+                <br>
+                <span>&lt;a href="./contact.html"&gtContact&lt;/a&gt</span>
+                <p>the ./ tells the browser to look for a file within the current project folder. Note if you need to reach a file within a parent directory then use ../,
+                    this can be repeated as many times as necessary.
+                </p>
+        </div>
+
+                <!--Internal linking (same page)-->
+        <div>
+            <h2>Internal linking (same page)</h2>
+                <p>Websites can often become quite large and it can be difficult to quickly locate information. Thankfully navagation links can help the viewer get to 
+                    where they need to be. These links can take the viewer to a new page (external link) or may jump to another section of the same webpage as shown in the 
+                    example below:</p> 
+                <br>
+                            <!--How to write an internal link on the same page in html format-->
+                <ul>
+                    <li><span>&lt;ol&gt</span></li>
+                        <ol>
+                            <li><span>&lt;a href="#top"&gtTop&lt;/a&gt</span></li>
+                            <li><span>&lt;a href="#bottom"&gtBottom&lt;/a&gt</span></li>
+                        </ol>
+                    <li><span>&lt;/ol&gt</span></li>
+                </ul>
+                <p>In the case of same page internal linking the targeted element must have an id, and the target link is a string containing both
+                    the # character and the target elements id. Here are examples of the targeted elements:</p>
+                <br>
+                            <!--Elements with ID's in html format-->
+                <ul>
+                    <li><span>&lt;p id="top"&gtThis is the top of the page!&lt;/p&gt</span></li>
+                    <li><span>&lt;p id="bottom"&gtThis is the bottom of the page!&lt;/p&gt</span></li>
+                </ul>
+        </div>
+
+                <!--Summary-->
+        <section>
+            <h2 class="table">Summary of the above information</h2>
+            <br>
+            <table class="center">
+                <caption>Same page links must be attached to elements with an id!</caption>
+                <thead>
+                    <tr>
+                        <th colspan="3">Types of html links</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>External</td>
+                        <td>Internal</td>
+                        <td>internal (same page)</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;a href=""&gtname&lt;/a&gt</td>
+                        <td>&lt;a href="./"&gtname&lt;/a&gt</td>
+                        <td>&lt;a href="#"&gtname&lt;/a&gt</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>    
+    </main>
+
+    <footer>
+                    <!--Thank you-->
+        <div class="thankYou">
+            <h3>Thank you for visiting!</h3>
+            <p>If you have any questions please refer to the contact information at the bootom of the page or refer to the following helpful links:</p>
+                <ul>
+                    <li><a href="https://www.w3schools.com/html/html_filepaths.asp" target="_blank">W3schools-File Paths</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files"target="_blank">MDN - Dealing with files</a></li>
+                </ul>
+        </div>
+
+
+                <!--Contact details-->
+        <div class="contact">
+            <h4>Contact details</h4>
+            <ul>
+                <li>Email: pinneyr@hotmail.com</li>
+                <li>Mobil: (+47) 99 12 74 07</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
