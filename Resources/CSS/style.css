@@ -1,0 +1,97 @@
+.nav {
+    text-align: center;
+}
+
+.nav li:hover{
+    background-color: powderblue;
+    transition: background-color 0.5s;
+}
+.nav a{
+    text-decoration: none;
+    color: black
+}
+
+.nav li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin: 0 30px;
+    font-weight: bold;
+    border: black 2px solid;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #4681f4;
+    color: black;
+}
+
+.banner {
+    height: 500px;
+    background-image: url("../Images/Skjermbilde\ 2023-05-11\ 142002.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.container h1 {
+    color: rgb(24, 22, 20);
+    font-weight: bold;
+    padding-top: 0px;
+    text-align: center;
+    font-size: 36px;
+    max-width: 940px;
+    margin: 20px auto;
+}
+
+body {
+    background: linear-gradient(-45deg, #456444ff, #58613Fff, #6B5E39ff, #7F5B34ff, #92582Eff, #A55529ff, #B85223ff);
+    background-size: 400% 400%;
+    animation: gradient 45s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+        }
+        
+        50% {
+        background-position: 100% 50%;
+        }
+        
+        100% {
+        background-position: 0% 50%;
+        }
+}
+
+.intro p {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.5px;
+    line-height: 200%;
+    margin: 20px 100px;
+}
+
+#date{
+    color:rgb(94, 85, 85);
+    text-align: right;
+  
+}
+
+#contact {
+    margin-left: 0px;
+
+}
+
+.details {
+    list-style-type: none;
+    text-align: left;
+}
+
+.details li{
+    display: inline-block;
+    margin-right: 50px;
+}
